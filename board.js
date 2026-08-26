@@ -82,9 +82,14 @@
       })(t0);
     });
   }
-  if ($("#p-overview").classList.contains("on")) {
-    new IntersectionObserver((es, io) => es.forEach(e => { if (e.isIntersecting) { runCounters(); io.disconnect(); } }), { threshold: .3 }).observe($(".stats"));
-  }
+  // always observe — a returning visitor may land on a saved tab, and the
+  // counters must still run the moment Overview becomes visible
+  try {
+    if ($(".stats")) new IntersectionObserver((es, io) => es.forEach(e => {
+      if (e.isIntersecting) { runCounters(); io.disconnect(); }
+    }), { threshold: .3 }).observe($(".stats"));
+    else runCounters();
+  } catch { runCounters(); }
 
   /* ================= TESTIMONIALS ================= */
   const track = $("#tstTrack"), dotsWrap = $("#tstDots");

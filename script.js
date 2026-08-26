@@ -230,19 +230,33 @@
     document.body.style.overflow = "";
   }));
 
-  /* -------- counters -------- */
-  const cio = new IntersectionObserver(es => es.forEach(en => {
-    if (!en.isIntersecting) return;
-    cio.unobserve(en.target);
-    const el = en.target, target = +el.dataset.count, suf = el.dataset.suffix || "";
-    const t0 = performance.now(), dur = 1500;
+  /* -------- counters — HTML ships final values; animation is an enhancement -------- */
+  const counters = $$("[data-count]");
+  const runCount = el => {
+    if (el.dataset.done) return;
+    el.dataset.done = "1";
+    const target = +el.dataset.count || 0, suf = el.dataset.suffix || "";
+    if (reduced || target <= 0) { el.textContent = target + suf; return; }
+    const t0 = performance.now(), dur = 1200;
+    el.textContent = "0" + suf;
     (function tick(now) {
       const p = Math.min((now - t0) / dur, 1);
       el.textContent = Math.round(target * (1 - Math.pow(1 - p, 4))) + suf;
       if (p < 1) requestAnimationFrame(tick);
     })(t0);
-  }), { threshold: 0.6 });
-  $$("[data-count]").forEach(el => cio.observe(el));
+  };
+  try {
+    const cio = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { cio.unobserve(en.target); runCount(en.target); }
+    }), { threshold: 0.35 });
+    counters.forEach(el => cio.observe(el));
+    // safety net — a stat sitting in view can never stay at zero
+    setTimeout(() => counters.forEach(el => {
+      if (el.dataset.done) return;
+      const r = el.getBoundingClientRect();
+      if (r.top < innerHeight && r.bottom > 0) runCount(el);
+    }), 2400);
+  } catch { counters.forEach(runCount); }
 
   /* -------- nav spy -------- */
   const links = $$(".nav-link");

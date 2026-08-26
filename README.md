@@ -72,6 +72,6 @@ Email `zinsunathaniel5@gmail.com` · WhatsApp `+234 901 742 0904` · X `x.com/Dy
 |---|---|
 | Testimonials | index voices section + board.js (slides in board.html) |
 | Journal notes | board.js (NOTES array) |
-| Stats (25+ / 10 / 98%) | index hero + board counters |
+| Stats (50+ / 10 / 98% / 24H) | index hero + board counters |
 | Availability ("September 2026") | index + board sidebar badge |
 | Estimator unit prices & ₦ FX rate | top of the ESTIMATOR block in script.js |
