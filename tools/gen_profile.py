@@ -49,12 +49,12 @@ pdf.cell(0, 8, "FIRSTLIGHT (R)")
 pdf.set_xy(x0 + 17, 23)
 pdf.set_font("Helvetica", "", 8.5)
 pdf.set_text_color(*MID)
-pdf.cell(0, 5, "DIGITAL STUDIO - DESIGN & ENGINEERING - EST. 2026 - IBADAN, NG")
+pdf.cell(0, 5, "DIGITAL STUDIO - DESIGN & ENGINEERING - EST. 2026 - REMOTE-FIRST, WORLDWIDE")
 
 # ---------- the studio ----------
 label(36, "THE STUDIO")
 pdf.set_y(41)
-body("FirstLight is a design & engineering studio from Ibadan, working worldwide. Two projects at a time, "
+body("FirstLight is a remote-first design & engineering studio, working worldwide. Two projects at a time, "
      "senior hands only, fixed price in writing before kickoff. The people on your first call ship your product.")
 
 # ---------- services ----------
@@ -113,6 +113,7 @@ contact = [
     ("X / TWITTER", "x.com/Dynamic_3dp"),
     ("INSTAGRAM", "instagram.com/cyber.stencil"),
     ("LINKEDIN", "linkedin.com/in/nathaniel-zinsu-9b7ab4424"),
+    ("COVERAGE", "Full EU overlap - 4h+ US East Coast (UTC+1)"),
     ("AVAILABILITY", "Booking September 2026 - two slots"),
     ("RESPONSE", "Under 24 hours, always a senior"),
 ]
@@ -133,7 +134,7 @@ pdf.multi_cell(W - 2 * x0, 5, "Every great product begins in the dark. We build 
 pdf.set_xy(x0, 280)
 pdf.set_font("Helvetica", "", 8)
 pdf.set_text_color(*DIM)
-pdf.cell(0, 5, "FIRSTLIGHT DIGITAL STUDIO - WWW.FIRSTLIGHTSTUDIO.CO - 7.3775 N, 3.9470 E")
+pdf.cell(0, 5, "FIRSTLIGHT DIGITAL STUDIO - WWW.FIRSTLIGHTSTUDIO.CO - REMOTE-FIRST WORLDWIDE")
 
 pdf.output("/home/user/firstlight/assets/firstlight-profile.pdf")
 print("PDF regenerated ✔")

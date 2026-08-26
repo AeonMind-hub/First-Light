@@ -64,6 +64,10 @@ Vercel dashboard → `firstlight` project → Settings → Git → Connect Git R
 - Floors align with the estimator: websites $3.5K · web apps $11.5K · mobile $13.5K · desktop $9.8K · AI $5K
 - Studio profile PDF regenerated with real contacts & pricing — source script: `tools/gen_profile.py` (re-run it after any contact change)
 
+## Global-positioning pass (v7.1)
+- All Nigeria/Ibadan/coordinates/WAT references removed — copy is now "remote-first · worldwide" with US & EU overlap messaging (hero, studio facts, FAQ, contact, footer clocks, board sidebar, board map → worldwide coverage card, PDF).
+- 6 client voices now (was 3) — Austin, London, Amsterdam, Toronto, Manchester, Barcelona.
+
 ## Contact details (live)
 Email `zinsunathaniel5@gmail.com` · WhatsApp `+234 901 742 0904` · X `x.com/Dynamic_3dp` · IG `instagram.com/cyber.stencil` · LinkedIn `in/nathaniel-zinsu-9b7ab4424`
 
@@ -72,6 +76,6 @@ Email `zinsunathaniel5@gmail.com` · WhatsApp `+234 901 742 0904` · X `x.com/Dy
 |---|---|
 | Testimonials | index voices section + board.js (slides in board.html) |
 | Journal notes | board.js (NOTES array) |
-| Stats (50+ / 10 / 98% / 24H) | index hero + board counters |
+| Stats (50+ / 20+ / 98% / 24H) | index hero + board counters |
 | Availability ("September 2026") | index + board sidebar badge |
 | Estimator unit prices & ₦ FX rate | top of the ESTIMATOR block in script.js |

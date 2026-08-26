@@ -757,11 +757,11 @@
     });
   }
 
-  /* -------- footer clock (Africa/Lagos) + year -------- */
+  /* -------- footer clock (studio time, UTC+1) + year -------- */
   const clock = $("#clock");
   if (clock) {
-    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Lagos", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" });
-    const tickClock = () => clock.textContent = `IBADAN · ${fmt.format(new Date())} WAT`;
+    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Etc/GMT-1", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    const tickClock = () => clock.textContent = `REMOTE · ${fmt.format(new Date())} UTC+1`;
     tickClock(); setInterval(tickClock, 1000);
   }
   $("#year").textContent = new Date().getFullYear();

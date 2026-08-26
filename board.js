@@ -29,15 +29,15 @@
   /* ================= LIVE CLOCK ================= */
   const sideClock = $("#sideClock");
   if (sideClock) {
-    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Lagos", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" });
-    const tick = () => sideClock.textContent = `${fmt.format(new Date())} WAT`;
+    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Etc/GMT-1", hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    const tick = () => sideClock.textContent = `${fmt.format(new Date())} UTC+1`;
     tick(); setInterval(tick, 1000);
   }
 
   /* ================= ROLE ROTATOR ================= */
   const roleEl = $("#roleRot");
   if (roleEl && !reduced) {
-    const roles = ["Digital Studio", "Websites · Apps · AI", "Design & Engineering", "Ibadan → Worldwide"];
+    const roles = ["Digital Studio", "Websites · Apps · AI", "Design & Engineering", "Remote → Worldwide"];
     let ri = 0, ci = roles[0].length, del = true;
     (function type() {
       const word = roles[ri];
