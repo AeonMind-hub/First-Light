@@ -17,7 +17,7 @@ python3 -m http.server 8080
 # Card      → http://localhost:8080/board.html
 ```
 
-## What's inside (v6)
+## What's inside (v7 — live contact details + detailed pricing)
 
 ### Editorial Edition (index.html)
 - **Day mode default** with remembered toggle; F-mark swaps variants automatically.
@@ -55,15 +55,23 @@ Vercel dashboard → `firstlight` project → Settings → Git → Connect Git R
 → pick `AeonMind-hub/First-Light`. After that, pushing to `main` deploys itself.
 `vercel.json` enables clean URLs (`/board`) and long caching for `assets/`.
 
-## Edit these placeholders
+## Detailed pricing (v7)
+- **Sprint Site** — from $3,500 (2–3 wks · typical $3.5K–$6K)
+- **Signature Website / Store** — from $8,500 (4–6 wks · typical $8.5K–$15K · 60-day support)
+- **Product Build** — from $12,500 (6–12 wks · typical $15K–$35K · 60-day warranty)
+- **AI Pilot** — from $5,000 (3 wks, credited toward full rollout) — full-width strip under the tier grid
+- Fine print: 40/40/20 payments · programmes $40K+ milestone-phased · retainers from $1,800/mo · USD, GBP, EUR or ₦ invoicing
+- Floors align with the estimator: websites $3.5K · web apps $11.5K · mobile $13.5K · desktop $9.8K · AI $5K
+- Studio profile PDF regenerated with real contacts & pricing — source script: `tools/gen_profile.py` (re-run it after any contact change)
+
+## Contact details (live)
+Email `zinsunathaniel5@gmail.com` · WhatsApp `+234 901 742 0904` · X `x.com/Dynamic_3dp` · IG `instagram.com/cyber.stencil` · LinkedIn `in/nathaniel-zinsu-9b7ab4424`
+
+## Edit these placeholders (still sample copy)
 | What | Where |
 |---|---|
-| Email `hello@firstlightstudio.co` | index.html + board.html + script.js + board.js (mailto) |
-| WhatsApp `+234 000 000 0000` | index.html + board.html contact rows + assets/firstlight-profile.pdf (regenerate) |
-| Social links (`#`) | index footer + board sidebar |
-| Pricing anchors ($2,900 / $7,500 / $25,000) | index pricing section |
-| Estimator unit prices & ₦ FX rate | top of the ESTIMATOR block in script.js |
 | Testimonials | index voices section + board.js (slides in board.html) |
 | Journal notes | board.js (NOTES array) |
 | Stats (25+ / 10 / 98%) | index hero + board counters |
 | Availability ("September 2026") | index + board sidebar badge |
+| Estimator unit prices & ₦ FX rate | top of the ESTIMATOR block in script.js |

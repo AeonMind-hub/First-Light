@@ -256,12 +256,12 @@
       if (!ok) { bNote.textContent = "PLEASE ADD YOUR NAME, A VALID EMAIL AND A FEW WORDS."; bNote.classList.remove("ok"); return; }
       const body = `Name: ${n.value.trim()}\nEmail: ${evv}\n\nAbout the project:\n${m.value.trim()}\n`;
       try {
-        location.href = "mailto:hello@firstlightstudio.co"
+        location.href = "mailto:zinsunathaniel5@gmail.com"
           + "?subject=" + encodeURIComponent("Project brief — studio card")
           + "&body=" + encodeURIComponent(body);
       } catch {}
       bNote.classList.add("ok");
-      bNote.textContent = "OPENING YOUR MAIL APP… OR WRITE TO HELLO@FIRSTLIGHTSTUDIO.CO DIRECTLY.";
+      bNote.textContent = "OPENING YOUR MAIL APP… OR WRITE TO ZINSUNATHANIEL5@GMAIL.COM DIRECTLY.";
     });
     bf.addEventListener("input", ev => ev.target.classList.remove("err"));
   }

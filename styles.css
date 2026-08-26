@@ -467,6 +467,23 @@ body::after{
 .price-col li::before{content:"+";position:absolute;left:2px;color:var(--amber)}
 .price-fine{margin-top:34px;color:var(--dim);line-height:2.1;text-align:center}
 
+/* v7 — AI pilot strip inside pricing */
+.price-ai{border:1px solid var(--line);border-top:0;padding:clamp(30px,3.4vw,46px);display:flex;justify-content:space-between;align-items:center;gap:44px}
+.pa-l{flex:1;min-width:0}
+.pa-k{display:block;color:var(--amber);font-size:.64rem;letter-spacing:.18em;margin-bottom:16px}
+.price-ai h3{font-family:var(--disp);font-weight:600;font-size:1.5rem;letter-spacing:-.02em;margin-bottom:14px}
+.price-ai p{color:var(--mid);font-size:.93rem;line-height:1.75;max-width:60ch;margin-bottom:18px}
+.pa-chips{display:block;color:var(--dim);font-size:.62rem;letter-spacing:.1em;line-height:2}
+.pa-r{flex-shrink:0;text-align:right;min-width:270px}
+.pa-r .price-n{margin:0 0 6px;justify-content:flex-end}
+.pa-r .price-t{margin-bottom:22px}
+@media(max-width:980px){
+  .price-ai{flex-direction:column;align-items:flex-start;gap:26px}
+  .pa-r{text-align:left;min-width:0}
+  .pa-r .price-n{justify-content:flex-start}
+}
+
+
 /* ============================================================
    ESTIMATOR
    ============================================================ */

@@ -418,12 +418,12 @@
     if (!ok) { note.textContent = "PLEASE ADD YOUR NAME, A VALID EMAIL AND A FEW WORDS ABOUT THE PROJECT."; note.classList.remove("ok"); return; }
     const body = `Name: ${name}\nEmail: ${email}\nCompany: ${F.company.value.trim() || "—"}\nI need: ${F.type.value}\nBudget: ${F.budget.value}\n\nAbout the project:\n${msg}\n`;
     try {
-      location.href = "mailto:hello@firstlightstudio.co"
+      location.href = "mailto:zinsunathaniel5@gmail.com"
         + "?subject=" + encodeURIComponent(`Project brief — ${F.type.value} (${F.budget.value})`)
         + "&body=" + encodeURIComponent(body);
     } catch {}
     note.classList.add("ok");
-    note.textContent = "OPENING YOUR MAIL APP… OR WRITE TO HELLO@FIRSTLIGHTSTUDIO.CO DIRECTLY.";
+    note.textContent = "OPENING YOUR MAIL APP… OR WRITE TO ZINSUNATHANIEL5@GMAIL.COM DIRECTLY.";
   });
   form.addEventListener("input", e => e.target.classList.remove("err"));
 
@@ -611,7 +611,7 @@
     });
 
     copyBtn.addEventListener("click", async () => {
-      const txt = `FirstLight — indicative estimate\n${briefText()}\n\nFixed written quote comes after a free scoping call: hello@firstlightstudio.co`;
+      const txt = `FirstLight — indicative estimate\n${briefText()}\n\nFixed written quote comes after a free scoping call: zinsunathaniel5@gmail.com`;
       let ok = false;
       try { await navigator.clipboard.writeText(txt); ok = true; }
       catch {
