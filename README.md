@@ -1,5 +1,8 @@
 # FirstLight® — Digital Studio Website
 
+**Live:** https://firstlight-dusky.vercel.app — Editorial at `/` · Card at `/board`
+**Repo:** https://github.com/AeonMind-hub/First-Light
+
 Static site. No build step. Two editions sharing one brand:
 - **`index.html`** — Editorial Edition: the long-scroll flagship site.
 - **`board.html`** — Card Edition: the tabbed "studio card" (vCard-style) experience.
@@ -35,19 +38,22 @@ python3 -m http.server 8080
 - **Studio profile PDF** — the sidebar button downloads a real generated one-pager (`assets/firstlight-profile.pdf`).
 - Mobile: fixed bottom tab bar with icons, just like the reference.
 
-## Push to your repo
+## Push changes to the repo
 ```bash
 cd firstlight
-git init && git add . && git commit -m "FirstLight studio site v6"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
+git add -A && git commit -m "describe the change"
+git push origin main
 ```
 
-## Deploy (pick one)
-- **Netlify** — drag the `firstlight` folder onto app.netlify.com/drop
-- **Vercel** — `vercel deploy` from this folder
-- **GitHub Pages** — push the repo, then Settings → Pages → deploy from `main`
+## Deploy
+Deployed on **Vercel** (free tier). To redeploy after edits:
+```bash
+npx vercel deploy --prod --yes --token=<your-vercel-token>
+```
+To get **automatic deploys on every git push**, connect Git once:
+Vercel dashboard → `firstlight` project → Settings → Git → Connect Git Repository
+→ pick `AeonMind-hub/First-Light`. After that, pushing to `main` deploys itself.
+`vercel.json` enables clean URLs (`/board`) and long caching for `assets/`.
 
 ## Edit these placeholders
 | What | Where |
