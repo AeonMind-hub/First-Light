@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FirstLight® — Digital Studio | Websites, Apps, Platforms & AI Engineered to Earn Belief</title>
+<meta name="description" content="FirstLight is a design and engineering studio. We take websites, mobile apps, web platforms, desktop software and AI integrations from first sketch to first light — one senior team, accountable for all of it.">
+<meta property="og:title" content="FirstLight® — Digital Studio">
+<meta property="og:description" content="Websites, UX & product design, mobile apps, web platforms, desktop software and AI — designed and engineered end-to-end.">
+<meta property="og:image" content="assets/og.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" as="image" href="assets/mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "FirstLight Digital Studio",
+  "description": "Brand & marketing websites, product design, mobile app development, custom web applications, desktop software and AI integration.",
+  "areaServed": "Worldwide",
+  "foundingDate": "2026",
+  "address": { "@type": "PostalAddress", "addressLocality": "Ibadan", "addressCountry": "NG" },
+  "priceRange": "$$$"
+}
+</script>
+</head>
+<body>
+<noscript><style>.preloader{display:none!important}</style></noscript>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-core">
+    <img src="assets/mark.png" alt="" class="pre-mark theme-img" id="preMark">
+    <span class="pre-word mono">FIRSTLIGHT<sup>®</sup>&nbsp;&nbsp;DIGITAL STUDIO</span>
+    <div class="pre-bar"><i id="preBar"></i></div>
+  </div>
+  <span class="pre-count mono" id="preNum">000</span>
+</div>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="siteHead">
+  <a class="brand" href="#top" aria-label="FirstLight home">
+    <img src="assets/mark.png" alt="" class="brand-mark theme-img">
+    <span class="brand-word">FirstLight<sup>®</sup></span>
+  </a>
+  <nav class="site-nav" aria-label="Primary">
+    <a href="#work" class="nav-link" data-scramble>Work</a>
+    <a href="#services" class="nav-link" data-scramble>Services</a>
+    <a href="#studio" class="nav-link" data-scramble>Studio</a>
+    <a href="#process" class="nav-link" data-scramble>Process</a>
+    <a href="#pricing" class="nav-link" data-scramble>Pricing</a>
+  </nav>
+  <div class="head-right">
+    <span class="head-avail mono"><i></i>Booking Sep ’26</span>
+    <a class="ed-switch mono" href="board.html" title="Switch to the tabbed studio card">⇄ CARD</a>
+    <button class="theme-btn mono" id="themeBtn" title="Toggle day / night" aria-label="Toggle day and night theme">DAY</button>
+    <a href="#contact" class="btn btn-outline" data-magnet>Start a project</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav-meta mono">FIRSTLIGHT® — DIGITAL STUDIO<br>EST. 2026 · IBADAN, NG</div>
+  <nav class="mnav-links" aria-label="Mobile">
+    <a href="#work" class="mnav-link"><span class="mono">01</span>Work</a>
+    <a href="#services" class="mnav-link"><span class="mono">02</span>Services</a>
+    <a href="#studio" class="mnav-link"><span class="mono">03</span>Studio</a>
+    <a href="#process" class="mnav-link"><span class="mono">04</span>Process</a>
+    <a href="#pricing" class="mnav-link"><span class="mono">05</span>Pricing</a>
+    <a href="#contact" class="mnav-link accent"><span class="mono">06</span>Start a project</a>
+  </nav>
+  <a href="board.html" class="mnav-ed mono">⇄ CARD EDITION — TABBED STUDIO VIEW</a>
+  <div class="mnav-meta mono dim">HELLO@FIRSTLIGHTSTUDIO.CO<br>WORKING WORLDWIDE · UTC+1<br>ON REPEAT — AMAPIANO HEAT ♪</div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="hero-viz" aria-hidden="true">
+    <div class="dawn" id="dawnFx"></div>
+    <div class="hline" id="hlineFx"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-meta mono" data-reveal>
+      <span>DIGITAL STUDIO — DESIGN &amp; ENGINEERING</span>
+      <span class="hm-r">EST. 2026 · 7.3775°N, 3.9470°E</span>
+    </div>
+    <h1 class="hero-h1" data-lines>Digital products<br>that <em>earn belief.</em></h1>
+    <div class="hero-bottom">
+      <p class="hero-sub" data-reveal data-delay=".35">
+        FirstLight is a design &amp; engineering studio. We take websites, mobile apps,
+        web platforms, desktop software and AI products from first sketch to first light —
+        one senior team, accountable for all of it.
+      </p>
+      <div class="hero-ctas" data-reveal data-delay=".45">
+        <a href="#contact" class="btn btn-solid" data-magnet>Start a project</a>
+        <a href="#work" class="btn btn-outline" data-magnet>Selected work <span class="dn">↓</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero-stats" data-reveal data-delay=".55">
+    <div class="hstat"><span class="hstat-n mono" data-count="25" data-suffix="+">0</span><span class="hstat-l">Products shipped</span></div>
+    <div class="hstat"><span class="hstat-n mono" data-count="10" data-suffix="">0</span><span class="hstat-l">Industries</span></div>
+    <div class="hstat"><span class="hstat-n mono" data-count="98" data-suffix="%">0</span><span class="hstat-l">On-time delivery</span></div>
+    <div class="hstat"><span class="hstat-n mono" data-count="24" data-suffix="H">0</span><span class="hstat-l">Response time</span></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track mono">
+    <span>BRAND &amp; MARKETING SITES&nbsp;&nbsp;—&nbsp;&nbsp;PRODUCT DESIGN &amp; UX&nbsp;&nbsp;—&nbsp;&nbsp;CUSTOM WEB APPS&nbsp;&nbsp;—&nbsp;&nbsp;iOS &amp; ANDROID&nbsp;&nbsp;—&nbsp;&nbsp;DESKTOP SOFTWARE&nbsp;&nbsp;—&nbsp;&nbsp;AI INTEGRATION&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+    <span>BRAND &amp; MARKETING SITES&nbsp;&nbsp;—&nbsp;&nbsp;PRODUCT DESIGN &amp; UX&nbsp;&nbsp;—&nbsp;&nbsp;CUSTOM WEB APPS&nbsp;&nbsp;—&nbsp;&nbsp;iOS &amp; ANDROID&nbsp;&nbsp;—&nbsp;&nbsp;DESKTOP SOFTWARE&nbsp;&nbsp;—&nbsp;&nbsp;AI INTEGRATION&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ BELIEF ============ -->
+<section class="belief">
+  <div class="container">
+    <p class="belief-text" id="belief">
+      <span class="wchunk">Every great product begins in the dark.</span><br>
+      <span class="wchunk">We build <em>toward the light.</em></span>
+    </p>
+    <p class="belief-note mono" data-reveal>FIRSTLIGHT® — THE BELIEF BEHIND THE NAME</p>
+  </div>
+</section>
+
+<!-- ============ 01 — WORK ============ -->
+<section class="sec" id="work" data-ghost="01">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>01</span>
+      <h2 class="sec-h2" data-lines>Selected work,<br><em>shipped &amp; live.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">TWELVE RECENT ENGAGEMENTS.<br>EVERY ONE DESIGNED AND BUILT<br>IN-HOUSE.</p>
+    </div>
+
+    <!-- Featured case A -->
+    <article class="case">
+      <div class="case-media" data-parallax data-lb-src="assets/work/eco-yachts.jpg" role="button" tabindex="0" aria-label="Open ECO+ Yachts gallery">
+        <img src="assets/work/eco-yachts.jpg" alt="ECO+ Yachts website" data-name="ECO+ Yachts" data-meta="SUSTAINABLE TRAVEL — WEBSITE &amp; BOOKING — 2026" data-desc="Destination-led booking experience for an eco-luxury yacht charter.">
+      </div>
+      <div class="case-info">
+        <ul class="case-meta mono" data-reveal>
+          <li><span>CLIENT</span>ECO+ YACHTS</li>
+          <li><span>SECTOR</span>SUSTAINABLE TRAVEL</li>
+          <li><span>SCOPE</span>STRATEGY · UX/UI · DEV · CMS</li>
+          <li><span>YEAR</span>2026</li>
+        </ul>
+        <h3 class="case-h3" data-reveal data-delay=".1">Luxury that answers<br>to the planet.</h3>
+        <p class="case-p" data-reveal data-delay=".18">
+          An eco-yacht charter needed to feel as considered as the boats themselves.
+          We built a destination-led booking experience — editorial storytelling up front,
+          availability and enquiry flows underneath — so the brand sells restraint and
+          responsibility, not cabins.
+        </p>
+        <div class="case-metrics" data-reveal data-delay=".26">
+          <div><span class="mono">+164%</span>Qualified enquiries</div>
+          <div><span class="mono">1.8s</span>Median LCP</div>
+          <div><span class="mono">6 wks</span>Concept → live</div>
+        </div>
+        <a href="#" class="case-link mono js-jump" data-target="0" data-reveal data-delay=".3">OPEN GALLERY ↗</a>
+      </div>
+    </article>
+
+    <!-- Featured case B -->
+    <article class="case flip">
+      <div class="case-media" data-parallax data-lb-src="assets/work/universe-app.webp" role="button" tabindex="0" aria-label="Open Universe gallery">
+        <img src="assets/work/universe-app.webp" alt="Universe live-audio app" data-name="Universe" data-meta="CREATOR ECONOMY — MOBILE APP — 2026" data-desc="Live audio, video rooms, wallet and payouts — one dual-theme design system.">
+      </div>
+      <div class="case-info">
+        <ul class="case-meta mono" data-reveal>
+          <li><span>CLIENT</span>UNIVERSE</li>
+          <li><span>SECTOR</span>CREATOR ECONOMY</li>
+          <li><span>SCOPE</span>PRODUCT DESIGN · iOS UI SYSTEM</li>
+          <li><span>YEAR</span>2026</li>
+        </ul>
+        <h3 class="case-h3" data-reveal data-delay=".1">A live-audio app creators<br>can bank on.</h3>
+        <p class="case-p" data-reveal data-delay=".18">
+          Forty-plus screens spanning rooms, live video, shows, wallet and payouts —
+          unified by one dual-theme design system. The brief was trust at the transaction
+          layer; the answer was deliberately calm money UX inside an otherwise electric product.
+        </p>
+        <div class="case-metrics" data-reveal data-delay=".26">
+          <div><span class="mono">40+</span>Screens shipped</div>
+          <div><span class="mono">1</span>Design system</div>
+          <div><span class="mono">iOS+</span>Android-ready</div>
+        </div>
+        <a href="#" class="case-link mono js-jump" data-target="2" data-reveal data-delay=".3">OPEN GALLERY ↗</a>
+      </div>
+    </article>
+
+    <!-- Before / After -->
+    <div class="ba-block">
+      <div class="ba-copy">
+        <span class="mono kicker" data-reveal>PROOF OF CRAFT</span>
+        <h3 class="ba-h3" data-lines>Same settings screen.<br><em>Second first impression.</em></h3>
+        <p class="ba-p" data-reveal data-delay=".15">
+          A fintech's settings screen was doing its job quietly — and quietly losing trust.
+          We rebuilt the hierarchy: grouped by intent, security surfaced, everything a thumb-reach away.
+        </p>
+        <p class="ba-note mono" data-reveal data-delay=".25">DRAG THE HANDLE — ARROW KEYS WORK TOO</p>
+      </div>
+      <div class="ba" id="ba" data-reveal data-delay=".1">
+        <img class="ba-img" src="assets/work/settings-after.jpg" alt="Redesigned settings screen">
+        <div class="ba-top"><img class="ba-img" src="assets/work/settings-before.jpg" alt="Original settings screen"></div>
+        <span class="ba-tag t-a mono">AFTER</span>
+        <span class="ba-tag t-b mono">BEFORE</span>
+        <div class="ba-line" aria-hidden="true"><i></i></div>
+        <div class="ba-hit" id="baHit"></div>
+        <input class="ba-range" id="baRange" type="range" min="0" max="100" value="58" aria-label="Move the comparison handle">
+      </div>
+    </div>
+
+    <!-- Project index -->
+    <div class="index-head mono" data-reveal>
+      <span>PROJECT INDEX</span><span class="dim">HOVER TO PREVIEW · CLICK TO OPEN</span><span>( 12 )</span>
+    </div>
+    <ul class="p-index" id="pIndex">
+      <li class="p-row" data-img="assets/work/eco-yachts.jpg" data-name="ECO+ Yachts" data-meta="TRAVEL — WEBSITE &amp; BOOKING — 2026" data-desc="Destination-led booking experience for an eco-luxury yacht charter."><span class="p-no mono">01</span><span class="p-name">ECO+ Yachts</span><span class="p-sector mono">TRAVEL</span><span class="p-scope mono">WEBSITE · DEV</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/launchfast.jpg" data-name="LaunchFast" data-meta="SAAS — MARKETING SITE — 2026" data-desc="Conversion-led site for a rapid MVP studio — offer engineered to close founders."><span class="p-no mono">02</span><span class="p-name">LaunchFast</span><span class="p-sector mono">SAAS</span><span class="p-scope mono">WEBSITE</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/universe-app.webp" data-name="Universe" data-meta="CREATOR ECONOMY — MOBILE APP — 2026" data-desc="Live audio, video rooms, wallet and payouts in one design system."><span class="p-no mono">03</span><span class="p-name">Universe</span><span class="p-sector mono">CONSUMER</span><span class="p-scope mono">MOBILE APP</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/vero-wood.jpg" data-name="Vero Wood Studio" data-meta="CRAFT &amp; TRADE — WEBSITE — 2026" data-desc="Warm, editorial presence for a bespoke carpentry studio — portfolio, services, quote capture."><span class="p-no mono">04</span><span class="p-name">Vero Wood Studio</span><span class="p-sector mono">CRAFT &amp; TRADE</span><span class="p-scope mono">WEBSITE</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/lumen-app.webp" data-name="Lumen" data-meta="WELLNESS — MOBILE APP — 2026" data-desc="Meditation and audiobooks with session tracking and a cinematic identity."><span class="p-no mono">05</span><span class="p-name">Lumen</span><span class="p-sector mono">WELLNESS</span><span class="p-scope mono">MOBILE APP</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/roofinger.webp" data-name="Roofinger" data-meta="HOME SERVICES — WEBSITE — 2026" data-desc="Lead-generation powerhouse for a roofing company — services, projects, FAQs, estimate CTAs."><span class="p-no mono">06</span><span class="p-name">Roofinger</span><span class="p-sector mono">HOME SERVICES</span><span class="p-scope mono">WEBSITE · DEV</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/bonatica.jpg" data-name="Bonatica" data-meta="BEAUTY — E-COMMERCE — 2026" data-desc="Skincare storefront with soft, clinical elegance and a reviews engine built for trust."><span class="p-no mono">07</span><span class="p-name">Bonatica</span><span class="p-sector mono">BEAUTY</span><span class="p-scope mono">E-COMMERCE</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/fishbowl-app.webp" data-name="Fishbowl" data-meta="B2B SAAS — MOBILE APP — 2026" data-desc="Sales companion: leads pipeline, automation builder and executive digests."><span class="p-no mono">08</span><span class="p-name">Fishbowl</span><span class="p-sector mono">B2B SAAS</span><span class="p-scope mono">MOBILE APP</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/anti-hotels.jpg" data-name="Anti Hotels" data-meta="HOSPITALITY — WEBSITE — 2026" data-desc="Boutique hotel experience with availability, rooms, offers and gallery storytelling."><span class="p-no mono">09</span><span class="p-name">Anti Hotels</span><span class="p-sector mono">HOSPITALITY</span><span class="p-scope mono">WEBSITE · CMS</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/pulse-app.webp" data-name="Pulse" data-meta="PRODUCTIVITY — MOBILE APP — 2026" data-desc="Monochrome task and project manager — timeline, calendar, team tasks."><span class="p-no mono">10</span><span class="p-name">Pulse</span><span class="p-sector mono">PRODUCTIVITY</span><span class="p-scope mono">MOBILE APP</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/structurapro.jpg" data-name="StructuraPro" data-meta="ENGINEERING — WEBSITE — 2026" data-desc="Precision-led site for a structural engineering partner — services, projects, certifications."><span class="p-no mono">11</span><span class="p-name">StructuraPro</span><span class="p-sector mono">ENGINEERING</span><span class="p-scope mono">WEBSITE</span><span class="p-year mono">2026</span></li>
+      <li class="p-row" data-img="assets/work/aurea.jpg" data-name="Auréa" data-meta="BEAUTY — BRAND &amp; STORE — 2026" data-desc="Botanical skincare brand world — photography, benefits architecture, subscription-ready."><span class="p-no mono">12</span><span class="p-name">Auréa</span><span class="p-sector mono">BEAUTY</span><span class="p-scope mono">BRAND &amp; STORE</span><span class="p-year mono">2026</span></li>
+    </ul>
+    <img id="pPreview" class="p-preview" alt="" aria-hidden="true">
+
+    <!-- Archive -->
+    <div class="index-head mono arc" data-reveal><span>FROM THE ARCHIVE</span><span class="dim">MORE SHIPPED WORK — DRAG OR SCROLL</span><span>( 13 )</span></div>
+    <div class="astrip" id="astrip">
+      <figure class="js-lb" data-name="Connect" data-meta="SOCIAL — MOBILE APP UI" data-desc="Profile-first social discovery concept."><img src="assets/work/social-connect.webp" alt="Social app" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Adverse" data-meta="LIVE STREAMING — MOBILE APP" data-desc="Creator live-streaming with stories and profile cards."><img src="assets/work/adverse-app.webp" alt="Adverse app" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Brilliant" data-meta="LUXURY — COMMERCE APP" data-desc="Jewellery commerce with shared-prong product detail."><img src="assets/work/brilliant-app.webp" alt="Brilliant app" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Autocheck" data-meta="AUTOMOTIVE — INSPECTION APP" data-desc="Purchase-inspection flow for high-value vehicles."><img src="assets/work/porsche-app.webp" alt="Car inspection app" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Invites" data-meta="EVENTS — MOBILE APP" data-desc="Event invites with card-stack browsing."><img src="assets/work/invites-app.webp" alt="Invites app" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Settings, reconsidered" data-meta="FINTECH — UI REDESIGN" data-desc="Before/after: a settings screen rebuilt for clarity."><img src="assets/work/settings-redesign.jpg" alt="Settings redesign" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Kinex" data-meta="WEARABLES — PRODUCT SITE" data-desc="Product storytelling for a fitness smartwatch."><img src="assets/work/kinex.jpg" alt="Kinex site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Vitera" data-meta="WELLNESS — E-COMMERCE" data-desc="Supplements storefront with FAQ-driven conversion."><img src="assets/work/vitera.jpg" alt="Vitera site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="PURE" data-meta="MOBILITY — PRODUCT SITE" data-desc="Electric scooter launch site with spec-led persuasion."><img src="assets/work/pure-ev.jpg" alt="PURE site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Holbeache Travel" data-meta="TRAVEL — WEBSITE" data-desc="Full-service travel agency, forty years of trust made digital."><img src="assets/work/holbeache.jpg" alt="Holbeache site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Builderss" data-meta="CONSTRUCTION — CORPORATE SITE" data-desc="Corporate construction site with featured projects and team."><img src="assets/work/builderss.webp" alt="Builderss site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="CASE Construction" data-meta="CONSTRUCTION — DESIGN STUDY" data-desc="Two competing design directions for a construction brand."><img src="assets/work/case-construction.webp" alt="CASE site" loading="lazy"></figure>
+      <figure class="js-lb" data-name="TNG" data-meta="B2B — GROWTH AGENCY SITE" data-desc="Dark, editorial site for a Nordic expansion agency."><img src="assets/work/tng.jpg" alt="TNG site" loading="lazy"></figure>
+    </div>
+
+    <!-- The Vault — inner pages, alternates & design studies -->
+    <div class="index-head mono arc" data-reveal><span>THE VAULT — INNER PAGES &amp; ALTERNATE DIRECTIONS</span><span class="dim">DRAG OR SCROLL · CLICK TO INSPECT</span><span>( 15 )</span></div>
+    <div class="astrip" id="astrip2">
+      <figure class="js-lb" data-name="Bonatica — Store Alt" data-meta="BEAUTY — E-COMMERCE" data-desc="Second direction for the skincare storefront: booking-led 'Love Your Skin' flow."><img src="assets/work/bonatica-store.jpg" alt="Bonatica store alternate" loading="lazy"></figure>
+      <figure class="js-lb" data-name="TNG — Programs" data-meta="B2B — PROGRAMS PAGE" data-desc="Dark editorial programs page for the Nordic expansion agency."><img src="assets/work/tng-programs.jpg" alt="TNG programs page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Vero Wood — Dark Hero" data-meta="CRAFT & TRADE — ALTERNATE DIRECTION" data-desc="Alternate hero: sawdust-and-steel photography, full bleed."><img src="assets/work/vero-wood-dark.jpg" alt="Vero Wood dark hero" loading="lazy"></figure>
+      <figure class="js-lb" data-name="LaunchFast — MVP Hero" data-meta="SAAS — ALTERNATE DIRECTION" data-desc="Purple-grade hero for 'Production-Ready MVPs for Ambitious Teams'."><img src="assets/work/launchfast-mvp.jpg" alt="LaunchFast MVP hero" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Brixwave — Hero" data-meta="CONSTRUCTION — HERO" data-desc="Innovative construction hero with orange-truss brand art."><img src="assets/work/brixwave-hero.webp" alt="Brixwave hero" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Brixwave — Heritage" data-meta="CONSTRUCTION — STORY PAGE" data-desc="Built on trust since 2015 — materials, craftsmanship, compliance."><img src="assets/work/brixwave-heritage.webp" alt="Brixwave heritage page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Brixwave — Projects & Team" data-meta="CONSTRUCTION — PROJECTS PAGE" data-desc="Featured projects grid and expert team credibilities."><img src="assets/work/brixwave-projects.webp" alt="Brixwave projects page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Brixwave — Journal" data-meta="CONSTRUCTION — JOURNAL & CTA" data-desc="Start building with confidence — journal, CTA and heavy footer."><img src="assets/work/brixwave-journal.webp" alt="Brixwave journal page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Roofinger — Services" data-meta="HOME SERVICES — SERVICES & PROJECTS" data-desc="Service cards over project proof — maintenance to construction."><img src="assets/work/roofinger-services.webp" alt="Roofinger services page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Roofinger — FAQ" data-meta="HOME SERVICES — TRUST PAGE" data-desc="Objection-handling FAQ page with inspection photography."><img src="assets/work/roofinger-faq.webp" alt="Roofinger FAQ page" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Roofinger — Estimate Flow" data-meta="HOME SERVICES — BLOG & ESTIMATE" data-desc="Free-estimate conversion block closing the journal page."><img src="assets/work/roofinger-estimate.webp" alt="Roofinger estimate flow" loading="lazy"></figure>
+      <figure class="js-lb" data-name="CASE — Direction B" data-meta="CONSTRUCTION — COMPETING DIRECTION" data-desc="Second design direction collage for the CASE construction study."><img src="assets/work/case-direction-b.webp" alt="CASE construction direction B" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Studio One-Pager" data-meta="CONCEPT — SELF-PROMO" data-desc="Dark 'I design & build websites' one-pager concept."><img src="assets/work/studio-onepager.jpg" alt="Studio one-pager concept" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Showcase Board 01" data-meta="STUDIO — MULTI-PROJECT BOARD" data-desc="Green showcase collage — sites, stores and product pages."><img src="assets/work/showcase-one.webp" alt="Showcase board green" loading="lazy"></figure>
+      <figure class="js-lb" data-name="Showcase Board 02" data-meta="STUDIO — MULTI-PROJECT BOARD" data-desc="Blue showcase collage — apps, sites and stores in one board."><img src="assets/work/showcase-two.webp" alt="Showcase board blue" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 — SERVICES ============ -->
+<section class="sec sec-line sec-band" id="services" data-ghost="02">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>02</span>
+      <h2 class="sec-h2" data-lines>Six disciplines,<br><em>one throat to choke.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">NO HAND-OFFS TO JUNIORS.<br>NO MYSTERY SUBCONTRACTORS.<br>THE PEOPLE ON YOUR FIRST CALL<br>SHIP YOUR PRODUCT.</p>
+    </div>
+
+    <div class="svc-rows">
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.01</span>
+        <h3 class="svc-name">Brand &amp; Marketing Websites</h3>
+        <div class="svc-desc">
+          <p>Flagship sites, campaign pages and storefronts engineered around one question: what should the visitor do next? Fast loads, clean ranks, obvious paths — measured by enquiries, not applause.</p>
+          <p class="svc-del mono">STRATEGY · CUSTOM UI · CMS / E-COMMERCE · MOTION · TECHNICAL SEO · ANALYTICS</p>
+        </div>
+      </div>
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.02</span>
+        <h3 class="svc-name">Product Design &amp; UX</h3>
+        <div class="svc-desc">
+          <p>Research, flows and prototypes that remove doubt before it costs money. Designed in Figma and reviewed on real content — never lorem ipsum — so every screen is pressure-tested before build.</p>
+          <p class="svc-del mono">USER RESEARCH · UX AUDITS · WIREFRAMES · DESIGN SYSTEMS · HI-FI UI · USABILITY TESTING</p>
+        </div>
+      </div>
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.03</span>
+        <h3 class="svc-name">Custom Web Applications</h3>
+        <div class="svc-desc">
+          <p>SaaS products, dashboards and client portals architected for scale — auth, roles, billing, APIs, admin — shipped with the documentation your team needs to own them outright.</p>
+          <p class="svc-del mono">ARCHITECTURE · API DESIGN · AUTH &amp; BILLING · ADMIN PANELS · CLOUD &amp; DEVOPS</p>
+        </div>
+      </div>
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.04</span>
+        <h3 class="svc-name">iOS &amp; Android Apps</h3>
+        <div class="svc-desc">
+          <p>Mobile products with a native feel — offline-capable, store-ready and instrumented from the first build. From consumer apps to internal tools your team actually opens.</p>
+          <p class="svc-del mono">REACT NATIVE / FLUTTER · PUSH &amp; OFFLINE · STORE DEPLOYMENT · PRODUCT ANALYTICS</p>
+        </div>
+      </div>
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.05</span>
+        <h3 class="svc-name">Desktop Applications</h3>
+        <div class="svc-desc">
+          <p>Cross-platform desktop software that earns a permanent place in the dock — signed, auto-updating and integrated deep into macOS, Windows and Linux.</p>
+          <p class="svc-del mono">ELECTRON / TAURI · OS INTEGRATIONS · AUTO-UPDATES · SIGNED INSTALLERS</p>
+        </div>
+      </div>
+      <div class="svc-row" data-reveal>
+        <span class="svc-no mono">S.06</span>
+        <h3 class="svc-name">AI Integration &amp; Automation</h3>
+        <div class="svc-desc">
+          <p>Practical AI, wired into products people already use: copilots inside your app, assistants trained on your documents, workflows that run themselves. Scoped against a benchmark, shipped behind a flag, measured against a real metric.</p>
+          <p class="svc-del mono">LLM COPILOTS &amp; CHAT · RAG ON YOUR DATA · AGENTS &amp; WORKFLOWS · AI SEARCH · EVAL PIPELINES · OPENAI / ANTHROPIC / GEMINI</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack mono" data-reveal>
+      <span>TOOLS OF TRADE&nbsp;&nbsp;→</span>
+      <span class="dim">FIGMA · NEXT.JS · TYPESCRIPT · REACT NATIVE · FLUTTER · NODE · POSTGRESQL · TAURI · OPENAI · ANTHROPIC · LANGCHAIN · PGVECTOR</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 — STUDIO ============ -->
+<section class="sec sec-line" id="studio" data-ghost="03">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>03</span>
+      <h2 class="sec-h2" data-lines>A small studio,<br><em>on purpose.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">FOUNDED 2026 · IBADAN, NG<br>OPERATING WORLDWIDE<br>ASYNC-FIRST · UTC+1</p>
+    </div>
+
+    <div class="studio-grid">
+      <p class="manifesto" data-reveal>
+        FirstLight is deliberately small. Two projects at a time. Senior hands only.
+        No account managers translating between you and the people doing the work.
+        We would rather ship less — and have everything we ship be the reference —
+        than scale into the kind of agency we built this one to escape.
+      </p>
+
+      <ul class="principles">
+        <li data-reveal><span class="mono">SENIOR, ONLY</span><p>The work you saw in our portfolio is the work you get. The same hands, start to finish.</p></li>
+        <li data-reveal data-delay=".06"><span class="mono">DESIGN ⇄ CODE, ONE TEAM</span><p>Designers and engineers sit in the same weekly review. What you approve is what ships — pixel for pixel.</p></li>
+        <li data-reveal data-delay=".12"><span class="mono">FIXED PRICE, IN WRITING</span><p>Every project is scoped and priced before kickoff. If we underestimate, that cost is ours.</p></li>
+        <li data-reveal data-delay=".18"><span class="mono">FULL OWNERSHIP</span><p>Your repo, your Figma, your analytics, your IP — transferred on final payment. No lock-in, no hostage files.</p></li>
+      </ul>
+
+      <dl class="facts mono" data-reveal>
+        <div><dt>LOCATION</dt><dd>IBADAN, NIGERIA — 7.3775°N, 3.9470°E</dd></div>
+        <div><dt>OPERATING</dt><dd>WORLDWIDE · 4H+ TIMEZONE OVERLAP</dd></div>
+        <div><dt>DISCIPLINES</dt><dd>STRATEGY × DESIGN × ENGINEERING × QA</dd></div>
+        <div><dt>CAPACITY</dt><dd>TWO PROJECTS AT A TIME</dd></div>
+        <div><dt>ENGAGEMENTS</dt><dd>FIXED SCOPE · MILESTONE PHASES · RETAINERS</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 — PROCESS ============ -->
+<section class="sec sec-line sec-band" id="process" data-ghost="04">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>04</span>
+      <h2 class="sec-h2" data-lines>A process built<br>for <em>certainty.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">BIG BUDGETS DIE FROM AMBIGUITY.<br>YOU WILL ALWAYS KNOW WHAT’S<br>HAPPENING, WHAT’S NEXT, AND<br>WHAT IT COSTS.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step-no mono">P.01</span>
+        <div class="step-body">
+          <h3>Discover<span class="step-time mono">WEEK 1</span></h3>
+          <p>We interrogate the goal, not just the brief — who it’s for, what it must achieve, how we’ll measure success. You leave with a scoped proposal, fixed price and timeline.</p>
+          <span class="step-out mono">OUTPUTS — PRODUCT BRIEF · SITEMAP · TECHNICAL PLAN · FIXED QUOTE</span>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step-no mono">P.02</span>
+        <div class="step-body">
+          <h3>Design<span class="step-time mono">WEEKS 1–3</span></h3>
+          <p>Wireframes to high-fidelity UI, reviewed on real content. You click through a working prototype of the entire product before a single line of code is written.</p>
+          <span class="step-out mono">OUTPUTS — WIREFRAMES · UI DESIGN · DESIGN SYSTEM · PROTOTYPE</span>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step-no mono">P.03</span>
+        <div class="step-body">
+          <h3>Build<span class="step-time mono">WEEKS 2–8</span></h3>
+          <p>Clean, documented code on a staging link you can open any day of the week. Friday demos keep scope honest; automated tests keep regressions out.</p>
+          <span class="step-out mono">OUTPUTS — STAGING BUILDS · WEEKLY DEMOS · TEST COVERAGE</span>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step-no mono">P.04</span>
+        <div class="step-body">
+          <h3>Launch<span class="step-time mono">LAUNCH WEEK</span></h3>
+          <p>Performance passes, accessibility, technical SEO, analytics and a choreographed deploy. We stay glued to the dashboards for the first 72 hours.</p>
+          <span class="step-out mono">OUTPUTS — QA SIGN-OFF · DEPLOYMENT · ANALYTICS DASHBOARDS</span>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step-no mono">P.05</span>
+        <div class="step-body">
+          <h3>Support &amp; scale<span class="step-time mono">ONGOING</span></h3>
+          <p>Thirty days of included fixes after every launch, then retainers for iteration and growth. Your product keeps improving long after the confetti.</p>
+          <span class="step-out mono">OUTPUTS — 30-DAY WARRANTY · ROADMAP · GROWTH EXPERIMENTS</span>
+        </div>
+      </li>
+    </ol>
+
+    <div class="expect mono" data-reveal>
+      <span>FRIDAY DEMOS</span><span>LIVE STAGING LINK</span><span>SHARED TASK BOARD</span><span>REPLIES &lt; 24H</span><span>FIXED QUOTE, IN WRITING</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 — PRICING ============ -->
+<section class="sec sec-line" id="pricing" data-ghost="05">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>05</span>
+      <h2 class="sec-h2" data-lines>Clear scope. Fixed price.<br><em>No surprises.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">EVERY ENGAGEMENT STARTS WITH<br>A FREE SCOPING CALL AND ENDS<br>WITH THE PRICE IN WRITING —<br>BEFORE ANY WORK BEGINS.</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-col" data-reveal>
+        <div class="price-head">
+          <h3>Starter Site</h3>
+          <span class="mono dim">FOR LAUNCHES &amp; VALIDATION</span>
+        </div>
+        <div class="price-n"><span>FROM</span><strong class="mono">$2,900</strong></div>
+        <span class="price-t mono">2–3 WEEKS · 2 REVISION ROUNDS</span>
+        <ul>
+          <li>Landing page or compact site, up to 5 pages</li>
+          <li>Custom design — never templates</li>
+          <li>CMS, technical SEO &amp; analytics configured</li>
+          <li>Conversion copy review</li>
+        </ul>
+        <a href="#estimate" class="btn btn-outline btn-block" data-magnet>Price it live →</a>
+      </div>
+
+      <div class="price-col featured" data-reveal data-delay=".08">
+        <span class="price-chip mono">MOST ENGAGED</span>
+        <div class="price-head">
+          <h3>Signature Website</h3>
+          <span class="mono dim">FOR BRANDS READY TO LEAD</span>
+        </div>
+        <div class="price-n"><span>FROM</span><strong class="mono">$7,500</strong></div>
+        <span class="price-t mono">4–6 WEEKS · 30-DAY SUPPORT</span>
+        <ul>
+          <li>Full multi-page site or e-commerce store</li>
+          <li>UX strategy, design system &amp; motion</li>
+          <li>Blog/CMS, search, forms, automation</li>
+          <li>Performance &amp; accessibility passes</li>
+          <li>Reusable landing templates for campaigns</li>
+        </ul>
+        <a href="#estimate" class="btn btn-solid btn-block" data-magnet>Price it live →</a>
+      </div>
+
+      <div class="price-col" data-reveal data-delay=".16">
+        <div class="price-head">
+          <h3>Product Build</h3>
+          <span class="mono dim">FOR APPS, PLATFORMS &amp; MVPs</span>
+        </div>
+        <div class="price-n"><span>FROM</span><strong class="mono">$25,000</strong></div>
+        <span class="price-t mono">6–12 WEEKS · 30-DAY WARRANTY</span>
+        <ul>
+          <li>Mobile app, web platform or desktop app</li>
+          <li>End-to-end: research → design → code → deploy</li>
+          <li>Auth, payments, APIs &amp; integrations</li>
+          <li>Store submission &amp; cloud infrastructure</li>
+          <li>Documentation &amp; full team handover</li>
+        </ul>
+        <a href="#estimate" class="btn btn-outline btn-block" data-magnet>Price it live →</a>
+      </div>
+    </div>
+
+    <p class="price-fine mono" data-reveal>
+      PAYMENT — 40% KICKOFF · 40% MIDPOINT DEMO · 20% LAUNCH&nbsp;&nbsp;&nbsp;&nbsp;
+      PROGRAMMES $40K+ ARE PHASED BY MILESTONE&nbsp;&nbsp;&nbsp;&nbsp;
+      POST-LAUNCH RETAINERS FROM $1,800/MO
+    </p>
+  </div>
+</section>
+
+<!-- ============ 06 — ESTIMATOR ============ -->
+<section class="sec sec-line sec-band" id="estimate" data-ghost="06">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>06</span>
+      <h2 class="sec-h2" data-lines>Name the thing.<br><em>Get a number.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">OUR PRICING LOGIC, IN PUBLIC.<br>THE SAME MATH WE RUN ON<br>SCOPING CALLS — RUN IT<br>YOURSELF, FIRST.</p>
+    </div>
+
+    <div class="est-grid">
+      <div class="est-controls" data-reveal>
+        <div class="est-field">
+          <label class="mono" for="estBrief">DESCRIBE WHAT YOU WANT TO BUILD <span class="est-hint">— WE DETECT THE INGREDIENTS AS YOU TYPE</span></label>
+          <textarea id="estBrief" rows="4" placeholder="e.g. “A booking web app for my hotel with payments, plus an AI assistant that answers guests on WhatsApp…”"></textarea>
+        </div>
+
+        <div class="est-group">
+          <span class="mono est-glabel">PROJECT TYPE — <span class="est-hint">TAP TO COMBINE</span></span>
+          <div class="est-pills" id="estTypes">
+            <button type="button" class="est-pill" data-k="website" aria-pressed="false">WEBSITE</button>
+            <button type="button" class="est-pill" data-k="webapp" aria-pressed="false">WEB APP / SAAS</button>
+            <button type="button" class="est-pill" data-k="mobile" aria-pressed="false">MOBILE APP</button>
+            <button type="button" class="est-pill" data-k="desktop" aria-pressed="false">DESKTOP APP</button>
+            <button type="button" class="est-pill" data-k="ai" aria-pressed="false">AI FEATURES</button>
+          </div>
+        </div>
+
+        <div class="est-group">
+          <span class="mono est-glabel">SCALE — <span id="estScaleVal">12</span> PAGES / SCREENS</span>
+          <input type="range" class="est-range" id="estScale" min="2" max="120" value="12" aria-label="Approximate pages or screens">
+        </div>
+
+        <div class="est-group">
+          <span class="mono est-glabel">CAPABILITIES</span>
+          <div class="est-pills" id="estCaps">
+            <button type="button" class="est-pill" data-k="auth" aria-pressed="false">ACCOUNTS &amp; AUTH</button>
+            <button type="button" class="est-pill" data-k="pay" aria-pressed="false">PAYMENTS</button>
+            <button type="button" class="est-pill" data-k="cms" aria-pressed="false">CMS / BLOG</button>
+            <button type="button" class="est-pill" data-k="shop" aria-pressed="false">E-COMMERCE</button>
+            <button type="button" class="est-pill" data-k="realtime" aria-pressed="false">REAL-TIME / CHAT</button>
+            <button type="button" class="est-pill" data-k="api" aria-pressed="false">API INTEGRATIONS</button>
+            <button type="button" class="est-pill" data-k="offline" aria-pressed="false">OFFLINE MODE</button>
+          </div>
+        </div>
+
+        <div class="est-2col">
+          <div class="est-group">
+            <span class="mono est-glabel">DESIGN LEVEL</span>
+            <div class="est-pills" data-single="design">
+              <button type="button" class="est-pill on" data-k="des-clean" aria-pressed="true">CLEAN &amp; CUSTOM</button>
+              <button type="button" class="est-pill" data-k="des-award" aria-pressed="false">AWARD-CLASS · ×1.3</button>
+            </div>
+          </div>
+          <div class="est-group">
+            <span class="mono est-glabel">TIMELINE</span>
+            <div class="est-pills" data-single="time">
+              <button type="button" class="est-pill on" data-k="time-std" aria-pressed="true">STANDARD</button>
+              <button type="button" class="est-pill" data-k="time-rush" aria-pressed="false">RUSH · ×1.2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="est-panel" data-reveal data-delay=".15">
+        <span class="mono est-plabel">INDICATIVE SCOPE — LIVE</span>
+        <div class="est-price">
+          <span class="est-pcur mono">EST. INVESTMENT</span>
+          <strong class="mono"><span id="estLow">$0</span><i>—</i><span id="estHigh">$0</span></strong>
+        </div>
+        <div class="est-sub mono"><span id="estWeeks">— WEEKS</span> · <span id="estNgn">≈ ₦—</span></div>
+        <ul class="est-lines" id="estLines"></ul>
+        <p class="est-note">An honest starting point, not a trap. Your real quote is fixed in writing after a free scoping call — and it never grows mid-project.</p>
+        <button type="button" class="btn btn-solid btn-block" id="estSend" data-magnet>Send this brief →</button>
+        <button type="button" class="btn btn-outline btn-block est-copy" id="estCopy" data-magnet><span>Copy the estimate</span></button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 — VOICES ============ -->
+<section class="sec sec-line voices" id="voices" data-ghost="07">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>07</span>
+      <h2 class="sec-h2" data-lines>In their <em>words.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">UNSCRIPTED. NAMES SHORTENED<br>FOR PRIVACY — REFERENCES<br>AVAILABLE ON A CALL.</p>
+    </div>
+
+    <div class="v-badge mono" data-reveal>
+      <span class="v-stars">★★★★★</span><span>5.0 — ACROSS EVERY ENGAGEMENT TO DATE</span>
+    </div>
+
+    <figure class="big-quote" data-reveal>
+      <span class="q-mark" aria-hidden="true">&ldquo;</span>
+      <blockquote>“FirstLight took a vague idea and returned a product our seed investors called <em>bankable.</em> Weekly demos meant zero surprises — on time, on budget, twice now.”</blockquote>
+      <figcaption>
+        <span class="v-chip mono">DK</span>
+        <span class="v-who mono">DANIEL K. — FOUNDER, FINTECH SAAS — LAGOS</span>
+      </figcaption>
+    </figure>
+
+    <div class="quote-duo">
+      <figure data-reveal>
+        <span class="q-mark q-sm" aria-hidden="true">&ldquo;</span>
+        <blockquote>“The new site tripled our qualified enquiries in the first quarter. It doesn’t just look premium — it sells. Our board noticed before our customers did.”</blockquote>
+        <figcaption>
+          <span class="v-chip mono">SM</span>
+          <span class="v-who mono">SARAH M. — MARKETING DIRECTOR, HOSPITALITY — LONDON</span>
+        </figcaption>
+      </figure>
+      <figure data-reveal data-delay=".1">
+        <span class="q-mark q-sm" aria-hidden="true">&ldquo;</span>
+        <blockquote>“Senior designers and engineers on the same call — decisions in hours, not weeks. The first agency we’ve rehired, and the only one we recommend without caveats.”</blockquote>
+        <figcaption>
+          <span class="v-chip mono">TA</span>
+          <span class="v-who mono">TOBI A. — COO, LOGISTICS PLATFORM — NAIROBI</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEGA CTA MARQUEE ============ -->
+<a class="mega" href="#contact" aria-label="Start a project">
+  <div class="mega-track">
+    <span>LET’S BUILD SOMETHING THAT LASTS&nbsp;—&nbsp;LET’S BUILD SOMETHING THAT LASTS&nbsp;—&nbsp;</span>
+    <span aria-hidden="true">LET’S BUILD SOMETHING THAT LASTS&nbsp;—&nbsp;LET’S BUILD SOMETHING THAT LASTS&nbsp;—&nbsp;</span>
+  </div>
+  <span class="mega-cue mono">CLICK — START A PROJECT ↗</span>
+</a>
+
+<!-- ============ 08 — FAQ ============ -->
+<section class="sec sec-line" id="faq" data-ghost="08">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>08</span>
+      <h2 class="sec-h2" data-lines>Answers,<br><em>upfront.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">ANYTHING ELSE? ASK DIRECTLY —<br>A SENIOR REPLIES, USUALLY<br>WITHIN HOURS.</p>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq" open data-reveal>
+        <summary><span class="mono">Q.01</span>How long does a typical project take?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Landing sites run 2–3 weeks, full websites 4–6 weeks, and mobile or web apps 8–12 weeks to a first release. Your proposal includes a week-by-week timeline — and we hit it.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.02</span>How does pricing work?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Fixed price, agreed in writing before kickoff: 40% to start, 40% at the midpoint demo, 20% at launch. Programmes above $40k are phased by milestone so risk stays low on both sides.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.03</span>Do you work with clients outside Nigeria?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Yes — most of our work is remote across Africa, Europe and North America. We guarantee at least four hours of timezone overlap, weekly video demos, and a shared board you can check any day.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.04</span>Who owns the work when it’s done?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>You do — completely. Code lives in your repository from day one, designs in your Figma, and full IP transfer is written into every contract upon final payment.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.05</span>Can you take over an existing product?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Often, yes. We start with a paid technical and design audit — a fixed-fee document covering what to keep, what to fix and what to rebuild — then you decide whether we’re the ones to do it.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.06</span>What happens after launch?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Every launch includes 30 days of fixes at no cost. After that, most clients move to a retainer for iteration and experiments — but there’s no obligation, and we hand over clean documentation either way.</p></div>
+      </details>
+      <details class="faq" data-reveal>
+        <summary><span class="mono">Q.07</span>Can you add AI to a product we already have?<span class="faq-x"></span></summary>
+        <div class="faq-a"><p>Yes — most AI work starts exactly there. We begin with a fixed-fee pilot behind a feature flag: one measurable use-case (support drafting, document Q&amp;A, workflow automation), benchmarked for two weeks. If the numbers hold, we roll it out properly. If they don’t, we say so and you keep the pilot code.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 — CONTACT ============ -->
+<section class="sec sec-line sec-band contact" id="contact" data-ghost="09">
+  <div class="container">
+    <div class="sec-top">
+      <span class="sec-no mono" data-reveal>09</span>
+      <h2 class="sec-h2" data-lines>Tell us what<br>you’re <em>building.</em></h2>
+      <p class="sec-note mono" data-reveal data-delay=".25">A FEW LINES IS ENOUGH. WITHIN<br>24 HOURS A SENIOR REPLIES WITH<br>HONEST THOUGHTS ON SCOPE,<br>BUDGET AND TIMELINE.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-rows" data-reveal>
+        <a class="c-row" href="mailto:hello@firstlightstudio.co">
+          <span class="c-l mono">EMAIL</span>
+          <span class="c-v">hello@firstlightstudio.co</span>
+          <span class="c-n mono dim">REPLIES &lt; 24H</span>
+        </a>
+        <a class="c-row" href="https://wa.me/2340000000000" target="_blank" rel="noopener">
+          <span class="c-l mono">WHATSAPP</span>
+          <span class="c-v">+234 000 000 0000</span>
+          <span class="c-n mono dim">MON–SAT · 9:00–18:00 WAT</span>
+        </a>
+        <div class="c-row">
+          <span class="c-l mono">STUDIO</span>
+          <span class="c-v">Ibadan, Nigeria</span>
+          <span class="c-n mono dim">WORKING WORLDWIDE</span>
+        </div>
+        <div class="c-row">
+          <span class="c-l mono">STATUS</span>
+          <span class="c-v"><i class="avail-dot"></i>Booking September 2026</span>
+          <span class="c-n mono dim">TWO SLOTS REMAINING</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="brief" data-reveal data-delay=".12" novalidate>
+        <div class="ff">
+          <label for="f-name" class="mono">YOUR NAME</label>
+          <input id="f-name" name="name" type="text" placeholder="Ada Lovelace" required>
+        </div>
+        <div class="ff-2">
+          <div class="ff">
+            <label for="f-email" class="mono">EMAIL</label>
+            <input id="f-email" name="email" type="email" placeholder="you@company.com" required>
+          </div>
+          <div class="ff">
+            <label for="f-company" class="mono">COMPANY</label>
+            <input id="f-company" name="company" type="text" placeholder="Optional">
+          </div>
+        </div>
+        <div class="ff-2">
+          <div class="ff">
+            <label for="f-type" class="mono">I NEED</label>
+            <select id="f-type" name="type">
+              <option>A brand / marketing website</option>
+              <option>Product design &amp; UX</option>
+              <option>A custom web application</option>
+              <option>An iOS / Android app</option>
+              <option>A desktop application</option>
+              <option>AI integration / automation</option>
+              <option>Not sure — advise me</option>
+            </select>
+          </div>
+          <div class="ff">
+            <label for="f-budget" class="mono">BUDGET RANGE</label>
+            <select id="f-budget" name="budget">
+              <option>$3k – $8k</option>
+              <option>$8k – $15k</option>
+              <option>$15k – $50k</option>
+              <option>$50k+</option>
+              <option>Guide me</option>
+            </select>
+          </div>
+        </div>
+        <div class="ff">
+          <label for="f-msg" class="mono">ABOUT THE PROJECT</label>
+          <textarea id="f-msg" name="message" rows="5" placeholder="What are you building, who is it for, and when do you want to launch?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid btn-block" data-magnet>Send the brief ↗</button>
+        <p class="form-note mono" id="formNote">OPENS YOUR MAIL APP, PRE-FILLED. NOTHING IS STORED HERE.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-mark" data-reveal>
+      <img src="assets/mark.png" alt="" class="foot-f theme-img">
+      <span class="foot-word">FirstLight<sup>®</sup></span>
+    </div>
+
+    <div class="foot-grid">
+      <div class="fg-col">
+        <span class="mono dim">SITEMAP</span>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#studio">Studio</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="fg-col">
+        <span class="mono dim">SERVICES</span>
+        <a href="#services">Brand &amp; Marketing Websites</a>
+        <a href="#services">Product Design &amp; UX</a>
+        <a href="#services">Custom Web Applications</a>
+        <a href="#services">iOS &amp; Android Apps</a>
+        <a href="#services">Desktop Applications</a>
+        <a href="#services">AI Integration &amp; Automation</a>
+      </div>
+      <div class="fg-col">
+        <span class="mono dim">CONNECT</span>
+        <a href="mailto:hello@firstlightstudio.co">Email</a>
+        <a href="#">X / Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+      </div>
+      <div class="fg-col fg-note">
+        <span class="mono dim">THE STUDIO</span>
+        <p>Design &amp; engineering for websites, apps and digital products — from first sketch to first light.</p>
+        <div class="now mono">
+          <span class="now-row"><i class="now-dot" aria-hidden="true"></i>NOW — ACCEPTING WEB &amp; MOBILE PROJECTS</span>
+          <button class="now-row now-play" id="grooveBtn" aria-pressed="false" aria-label="Play the amapiano groove">
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span class="np-label">ON REPEAT — AMAPIANO HEAT</span>
+            <span class="np-cue">PLAY&nbsp;▸</span>
+          </button>
+          <span class="now-row"><i class="now-note" aria-hidden="true">✦</i>READING — LAWS OF UX</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-base mono">
+      <span>© <span id="year">2026</span> FIRSTLIGHT DIGITAL STUDIO</span>
+      <span id="clock">IBADAN · --:--:-- WAT</span>
+      <span class="dim">7.3775°N, 3.9470°E</span>
+      <a href="#top" class="to-top">BACK TO TOP ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
+  <span class="lb-count mono" id="lbCount">01 / 25</span>
+  <button class="lb-x mono" id="lbClose" aria-label="Close">CLOSE ✕</button>
+  <div class="lb-body">
+    <div class="lb-media" id="lbMedia"><img id="lbImg" src="" alt=""></div>
+    <div class="lb-cap">
+      <div class="lb-cap-l">
+        <h3 id="lbTitle"></h3>
+        <p id="lbDesc"></p>
+      </div>
+      <span class="mono" id="lbKind"></span>
+    </div>
+  </div>
+  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous">←</button>
+  <button class="lb-arrow lb-next" id="lbNext" aria-label="Next">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
