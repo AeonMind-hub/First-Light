@@ -109,7 +109,7 @@ label(196, "CONTACT")
 pdf.set_y(201)
 contact = [
     ("EMAIL", "zinsunathaniel5@gmail.com"),
-    ("WHATSAPP", "+234 901 742 0904"),
+    ("WHATSAPP", "Chat instantly - tap to open WhatsApp"),
     ("X / TWITTER", "x.com/Dynamic_3dp"),
     ("INSTAGRAM", "instagram.com/cyber.stencil"),
     ("LINKEDIN", "linkedin.com/in/nathaniel-zinsu-9b7ab4424"),
@@ -122,7 +122,10 @@ for k, v in contact:
     pdf.set_font("Helvetica", "B", 8); pdf.set_text_color(*DIM)
     pdf.cell(30, 5, k)
     pdf.set_font("Helvetica", "", 8.5); pdf.set_text_color(*PAPER)
-    pdf.multi_cell(0, 5, v)
+    if k == "WHATSAPP":
+        pdf.cell(0, 5, v, link="https://wa.me/2349017420904", new_x="LMARGIN", new_y="NEXT")
+    else:
+        pdf.multi_cell(0, 5, v)
 
 # ---------- footer ----------
 pdf.set_draw_color(*(60, 52, 40))

@@ -252,21 +252,34 @@
   const bf = $("#boardBrief"), bNote = $("#boardNote");
   if (bf) {
     const n = $("#b-name"), e = $("#b-email"), m = $("#b-msg");
-    bf.addEventListener("submit", ev => {
+    bf.addEventListener("submit", async ev => {
       ev.preventDefault();
       let ok = true;
       [[n, n.value.trim()], [m, m.value.trim()]].forEach(([f, v]) => { f.classList.toggle("err", !v); if (!v) ok = false; });
       const evv = e.value.trim();
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(evv)) { e.classList.add("err"); ok = false; }
       if (!ok) { bNote.textContent = "PLEASE ADD YOUR NAME, A VALID EMAIL AND A FEW WORDS."; bNote.classList.remove("ok"); return; }
-      const body = `Name: ${n.value.trim()}\nEmail: ${evv}\n\nAbout the project:\n${m.value.trim()}\n`;
+      bNote.classList.remove("ok");
+      bNote.textContent = "SENDING — THIS STAYS IN THE BROWSER…";
       try {
-        location.href = "mailto:zinsunathaniel5@gmail.com"
-          + "?subject=" + encodeURIComponent("Project brief — studio card")
-          + "&body=" + encodeURIComponent(body);
-      } catch {}
-      bNote.classList.add("ok");
-      bNote.textContent = "OPENING YOUR MAIL APP… OR WRITE TO ZINSUNATHANIEL5@GMAIL.COM DIRECTLY.";
+        const r = await fetch("/api/brief", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({
+            name: n.value.trim(), email: evv, company: "",
+            type: "Studio card brief", budget: "—", message: m.value.trim(),
+            honey: (document.getElementById("b-honey") || {}).value || ""
+          })
+        });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || j.ok !== true) throw new Error("send failed");
+        bf.reset();
+        bNote.classList.add("ok");
+        bNote.textContent = "BRIEF RECEIVED — A SENIOR REPLIES WITHIN 24 HOURS.";
+      } catch {
+        bNote.classList.remove("ok");
+        bNote.innerHTML = "COULDN\u2019T SEND — EMAIL <a href=\"mailto:zinsunathaniel5@gmail.com\" style=\"color:inherit;text-decoration:underline\">ZINSUNATHANIEL5@GMAIL.COM</a> DIRECTLY.";
+      }
     });
     bf.addEventListener("input", ev => ev.target.classList.remove("err"));
   }

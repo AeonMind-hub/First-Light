@@ -64,6 +64,11 @@ Vercel dashboard → `firstlight` project → Settings → Git → Connect Git R
 - Floors align with the estimator: websites $3.5K · web apps $11.5K · mobile $13.5K · desktop $9.8K · AI $5K
 - Studio profile PDF regenerated with real contacts & pricing — source script: `tools/gen_profile.py` (re-run it after any contact change)
 
+## Conversion route (v7.2)
+- Contact forms now submit **in-browser** via `api/brief.js` (Vercel serverless function → FormSubmit → Gmail). No mail app, mobile-safe.
+- FormSubmit needs **one-time activation**: after the first real submission, `FormSubmit` emails `zinsunathaniel5@gmail.com` a confirmation link — click it once and every brief lands in the inbox (auto-reply goes to the sender).
+- WhatsApp number is **link-only** ("Chat instantly ↗" → wa.me) — the raw +234 digits never render on screen.
+
 ## Global-positioning pass (v7.1)
 - All Nigeria/Ibadan/coordinates/WAT references removed — copy is now "remote-first · worldwide" with US & EU overlap messaging (hero, studio facts, FAQ, contact, footer clocks, board sidebar, board map → worldwide coverage card, PDF).
 - 6 client voices now (was 3) — Austin, London, Amsterdam, Toronto, Manchester, Barcelona.

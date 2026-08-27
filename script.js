@@ -421,7 +421,7 @@
     name: $("#f-name"), email: $("#f-email"), company: $("#f-company"),
     type: $("#f-type"), budget: $("#f-budget"), message: $("#f-msg")
   };
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", async e => {
     e.preventDefault();
     const name = F.name.value.trim(), email = F.email.value.trim(), msg = F.message.value.trim();
     let ok = true;
@@ -430,14 +430,28 @@
     });
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { F.email.classList.add("err"); ok = false; }
     if (!ok) { note.textContent = "PLEASE ADD YOUR NAME, A VALID EMAIL AND A FEW WORDS ABOUT THE PROJECT."; note.classList.remove("ok"); return; }
-    const body = `Name: ${name}\nEmail: ${email}\nCompany: ${F.company.value.trim() || "—"}\nI need: ${F.type.value}\nBudget: ${F.budget.value}\n\nAbout the project:\n${msg}\n`;
+    note.classList.remove("ok");
+    note.textContent = "SENDING YOUR BRIEF — THIS STAYS IN THE BROWSER…";
     try {
-      location.href = "mailto:zinsunathaniel5@gmail.com"
-        + "?subject=" + encodeURIComponent(`Project brief — ${F.type.value} (${F.budget.value})`)
-        + "&body=" + encodeURIComponent(body);
-    } catch {}
-    note.classList.add("ok");
-    note.textContent = "OPENING YOUR MAIL APP… OR WRITE TO ZINSUNATHANIEL5@GMAIL.COM DIRECTLY.";
+      const r = await fetch("/api/brief", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          name, email,
+          company: F.company.value.trim(),
+          type: F.type.value, budget: F.budget.value, message: msg,
+          honey: (document.getElementById("f-honey") || {}).value || ""
+        })
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || j.ok !== true) throw new Error("send failed");
+      form.reset();
+      note.classList.add("ok");
+      note.textContent = "BRIEF RECEIVED — THANK YOU. A SENIOR REPLIES WITHIN 24 HOURS. WATCH FOR A QUICK CONFIRMATION PING (CHECK SPAM JUST IN CASE).";
+    } catch {
+      note.classList.remove("ok");
+      note.innerHTML = "COULDN\u2019T SEND JUST NOW — EMAIL <a href=\"mailto:zinsunathaniel5@gmail.com\" style=\"color:inherit;text-decoration:underline\">ZINSUNATHANIEL5@GMAIL.COM</a> DIRECTLY AND WE\u2019LL TAKE IT FROM THERE.";
+    }
   });
   form.addEventListener("input", e => e.target.classList.remove("err"));
 
