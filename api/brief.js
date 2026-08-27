@@ -43,9 +43,9 @@ module.exports = async (req, res) => {
     const j = await r.json().catch(() => ({}));
     const msg = String(j.message || "");
     const failed = !r.ok || (String(j.success) === "false" && !/activat/i.test(msg));
-    if (failed) { res.status(502).json({ ok: false }); return; }
+    if (failed) { res.status(502).json({ ok: false, upstream: r.status, upstreamMsg: msg.slice(0, 160) }); return; }
     res.status(200).json({ ok: true, activationPending: /activat/i.test(msg) });
   } catch (err) {
-    res.status(500).json({ ok: false });
+    res.status(500).json({ ok: false, err: String(err).slice(0, 160) });
   }
 };
