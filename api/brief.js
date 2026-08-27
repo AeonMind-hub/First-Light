@@ -19,7 +19,13 @@ module.exports = async (req, res) => {
 
     const r = await fetch("https://formsubmit.co/ajax/zinsunathaniel5@gmail.com", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Origin": "https://firstlight-dusky.vercel.app",
+        "Referer": "https://firstlight-dusky.vercel.app/",
+        "User-Agent": "Mozilla/5.0 (FirstLight Studio site form)"
+      },
       body: JSON.stringify({
         _subject: `Project brief — ${type || "General"} (${budget || "n/a"}) — ${name}`,
         _template: "table",
