@@ -433,18 +433,22 @@
     note.classList.remove("ok");
     note.textContent = "SENDING YOUR BRIEF — THIS STAYS IN THE BROWSER…";
     try {
-      const r = await fetch("/api/brief", {
+      const r = await fetch("https://formsubmit.co/ajax/zinsunathaniel5@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
-          name, email,
-          company: F.company.value.trim(),
-          type: F.type.value, budget: F.budget.value, message: msg,
-          honey: (document.getElementById("f-honey") || {}).value || ""
+          _subject: `Project brief — ${F.type.value} (${F.budget.value}) — ${name}`,
+          _template: "table", _captcha: "false", _replyto: email,
+          _autoresponse: "Hi " + name + ", thanks for your brief — it just landed with a senior at FirstLight. Expect a reply within 24 hours.",
+          _honey: (document.getElementById("f-honey") || {}).value || "",
+          "Name": name, "Email": email,
+          "Company": F.company.value.trim() || "—",
+          "Project type": F.type.value, "Budget": F.budget.value, "Brief": msg
         })
       });
       const j = await r.json().catch(() => ({}));
-      if (!r.ok || j.ok !== true) throw new Error("send failed");
+      const delivered = String(j.success) === "true" || /activat/i.test(String(j.message || ""));
+      if (!r.ok || !delivered) throw new Error("send failed");
       form.reset();
       note.classList.add("ok");
       note.textContent = "BRIEF RECEIVED — THANK YOU. A SENIOR REPLIES WITHIN 24 HOURS. WATCH FOR A QUICK CONFIRMATION PING (CHECK SPAM JUST IN CASE).";

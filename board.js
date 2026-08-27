@@ -262,17 +262,21 @@
       bNote.classList.remove("ok");
       bNote.textContent = "SENDING — THIS STAYS IN THE BROWSER…";
       try {
-        const r = await fetch("/api/brief", {
+        const r = await fetch("https://formsubmit.co/ajax/zinsunathaniel5@gmail.com", {
           method: "POST",
           headers: { "Content-Type": "application/json", "Accept": "application/json" },
           body: JSON.stringify({
-            name: n.value.trim(), email: evv, company: "",
-            type: "Studio card brief", budget: "—", message: m.value.trim(),
-            honey: (document.getElementById("b-honey") || {}).value || ""
+            _subject: "Project brief — studio card — " + n.value.trim(),
+            _template: "table", _captcha: "false", _replyto: evv,
+            _autoresponse: "Hi " + n.value.trim() + ", thanks for your brief — it just landed with a senior at FirstLight. Expect a reply within 24 hours.",
+            _honey: (document.getElementById("b-honey") || {}).value || "",
+            "Name": n.value.trim(), "Email": evv,
+            "Project type": "Studio card brief", "Budget": "—", "Brief": m.value.trim()
           })
         });
         const j = await r.json().catch(() => ({}));
-        if (!r.ok || j.ok !== true) throw new Error("send failed");
+        const delivered = String(j.success) === "true" || /activat/i.test(String(j.message || ""));
+        if (!r.ok || !delivered) throw new Error("send failed");
         bf.reset();
         bNote.classList.add("ok");
         bNote.textContent = "BRIEF RECEIVED — A SENIOR REPLIES WITHIN 24 HOURS.";

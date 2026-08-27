@@ -65,7 +65,7 @@ Vercel dashboard → `firstlight` project → Settings → Git → Connect Git R
 - Studio profile PDF regenerated with real contacts & pricing — source script: `tools/gen_profile.py` (re-run it after any contact change)
 
 ## Conversion route (v7.2)
-- Contact forms now submit **in-browser** via `api/brief.js` (Vercel serverless function → FormSubmit → Gmail). No mail app, mobile-safe.
+- Contact forms now submit **in-browser** direct to FormSubmit (→ `zinsunathaniel5@gmail.com`). No mail app, mobile-safe. No server needed.
 - FormSubmit needs **one-time activation**: after the first real submission, `FormSubmit` emails `zinsunathaniel5@gmail.com` a confirmation link — click it once and every brief lands in the inbox (auto-reply goes to the sender).
 - WhatsApp number is **link-only** ("Chat instantly ↗" → wa.me) — the raw +234 digits never render on screen.
 
